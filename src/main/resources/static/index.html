@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hello WebSocket</title>
+  <!-- Include jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.5.1/sockjs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+<div id="main-content">
+  <div>
+    <div>
+      <label>userid?</label>
+      <input type="text" id="username" placeholder="Your userid here...">
+      <label>group id</label>
+      <input type="text" id="group_id" placeholder="Your group id here...">
+    </div>
+    <button id="connect" type="submit">Connect</button>
+    <form>
+      <div>
+        <label>receiver groupid:</label>
+        <input type="text" id="receiver_id" placeholder="receiver groupid...">
+      </div>
+      <div>
+        <label>message:</label>
+        <input type="text" id="receiver_message" placeholder=" message...">
+      </div>
+      <button id="send" type="submit">Send</button>
+    </form>
+  </div>
+</div>
+<div>
+  <label>Message from someone: </label><span id="message"></span>
+</div>
+</body>
+</html>
